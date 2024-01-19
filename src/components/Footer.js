@@ -6,7 +6,7 @@ function Footer({ counts }) {
   return (
     <footer className="bg-black py-5 px-10 text-center text-white">
       <div className="flex justify-center items-center mb-4">
-        <Link to="/api/character" className="mx-2 text-gray-400 hover:text-gray-300">CHARACTERS: {counts.chracters}</Link>
+        <Link to="/api/character" className="mx-2 text-gray-400 hover:text-gray-300">CHARACTERS: {counts.characters}</Link>
         <Link to="/api/location" className="mx-2 text-gray-400 hover:text-gray-300">LOCATIONS: {counts.locations}</Link>
         <Link to="/api/episode" className="mx-2 text-gray-400 hover:text-gray-300">EPISODES: {counts.episodes}</Link>
       </div>

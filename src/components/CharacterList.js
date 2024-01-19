@@ -67,9 +67,9 @@ function CharacterList() {
                 <div className='flex justify-center items-center flex-wrap max-w-1920px'>
                     {characters.map((character) => (
 
-                        <Link key={character.id} to={`/character/${character.id}`} className="md:w-[600px] w-full h-[220px] flex flex-col md:flex-row md:overflow-hidden rounded-md m-2 ">
-                            <img src={character.image} alt={character.name} className="w-full h-[45] object-cover" />
-                            <div className="p-4" style={{ backgroundColor: 'rgba(60, 62, 68, 1)' }}>
+                        <Link key={character.id} to={`/character/${character.id}`} className="md:w-[600px]  md:h-[220px]  h-[400px] flex flex-col md:flex-row md:overflow-hidden rounded-md md:m-2 m-16">
+                            <img src={character.image} alt={character.name} className="md:h-full h-[334px] md:object-cover object-fit rounded-t-xl" />
+                            <div className="p-4 md:rounded-r-md rounded-md" style={{ backgroundColor: 'rgba(60, 62, 68, 1)' }}>
                                 <h2 className="text-xl font-bold text-white">{character.name}</h2>
                                 <p className={`font-semibold flex items-center text-white ${character.status === 'Alive' ? 'text-green-600' ? character.status === 'Dead' : 'text-red-600' : ""}`}>{character.status === 'Alive' ? <span class="w-2 h-2 bg-green-500 rounded-full inline-block mr-2"></span> : character.status === 'Dead' ? <span class="w-2 h-2 bg-red-500 rounded-full inline-block mr-2"></span> : ""}
                                     {character.status} - {character.species}</p>
