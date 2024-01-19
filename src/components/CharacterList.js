@@ -61,13 +61,13 @@ function CharacterList() {
         <>
             <Header />
             <div className="flex justify-center items-center flex-col h-[calc(50vh-60px)] text-center relative">
-                <h1 className="text-8xl font-bold ml-4">The Rick and Morty API</h1>
+            <h1 className="text-6xl md:text-8xl px-[20px] font-bold ml-4">The Rick and Morty API</h1>
             </div>
             <div className="flex justify-center items-center py-[4.5rem] px-0 min-h-[calc(50vh-60px)]" style={{ backgroundColor: 'rgb(39, 43, 51)' }}>
                 <div className='flex justify-center items-center flex-wrap max-w-1920px'>
                     {characters.map((character) => (
 
-                        <Link key={character.id} to={`/character/${character.id}`} className="w-[600px] h-[220px] flex overflow-hidden rounded-md m-2 shadow-md">
+                        <Link key={character.id} to={`/character/${character.id}`} className="md:w-[600px] w-full h-[220px] flex flex-col md:flex-row md:overflow-hidden rounded-md m-2 ">
                             <img src={character.image} alt={character.name} className="w-full h-[45] object-cover" />
                             <div className="p-4" style={{ backgroundColor: 'rgba(60, 62, 68, 1)' }}>
                                 <h2 className="text-xl font-bold text-white">{character.name}</h2>

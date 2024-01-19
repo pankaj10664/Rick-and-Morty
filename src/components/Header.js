@@ -17,11 +17,12 @@ const Header = () => {
                     <Link to="https://rickandmortyapi.com/about" className="hover:text-[#FF9900] font-semibold">About</Link>
                 </li>
                 <li>
-                    <Link to="/support" className="hover:text-[white] hover:bg-[#FF9900] uppercase m-0 rounded-xl px-4 py-2 font-semibold border-2 border-orange-500 bg-transparent text-gray-600">
-                        Support Us
+  <Link to="/support" className="hover:text-[white] hover:bg-[#FF9900] uppercase m-0 rounded-xl px-3 py-2 font-semibold border-2 border-orange-500 xs:bg-orange-500 text-gray-600">
+    <span className="hidden md:inline">Support Us</span>
+    <span className="md:hidden text-white" role="img" >❤️</span>
+  </Link>
+</li>
 
-                    </Link>
-                </li>
             </ul>
         </nav>
 
